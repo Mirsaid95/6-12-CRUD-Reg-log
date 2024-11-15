@@ -6,17 +6,17 @@ export const Home = () => {
 
   return (
     <section>
-      <div className="flex">
-        <div className="w-[256px] h-[100vh] p-2">
+      <div className="flex bg-blue-500">
+        <div className="w-[256px] h-[100vh] p-2 bg-blue-900">
           <div className="w-full bg-white">
-            <h1 className="text-[20px] text-gray-500 font-bold text-center">
+            <h1 className="text-[20px] text-blue-900 font-bold text-center">
               Categories
             </h1>
           </div>
         </div>
 
-        <div className=" w-full p-1">
-          <div className=" w-full grid grid-cols-4 p-2 gap-4 bg-gray-300">
+        <div className=" w-full p-1 pt-[30px]">
+          <div className=" w-full grid grid-cols-4 p-2 gap-4">
             {data?.map((item) => (
               <div
                 className="w-[350px] bg-slate-700  flex flex-col gap-4 rounded-md hover:bg-slate-800 scale-100 hover:shadow-lg hover:shadow-slate-500"
